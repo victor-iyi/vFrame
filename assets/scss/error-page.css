@@ -1,0 +1,24 @@
+/**
+ * ensures that vertically aligned children don't appear blurry
+ */
+/**
+ * vertically aligns an element
+ */
+/*
+    Keyframes
+    Credits: https://gist.github.com/Integralist/3931680
+*/
+/*
+    Transform
+    Credits: https://codepen.io/sawmac/pen/qGudy/
+*/
+/*
+    Style placeholder
+    Credits: http://stackoverflow.com/questions/17181849/placeholder-mixin-scss-css
+*/
+.main-wrapper {
+  height: 100%;
+  position: relative;
+  font-family: sans-serif !important; }
+
+/*# sourceMappingURL=error-page.css.map */

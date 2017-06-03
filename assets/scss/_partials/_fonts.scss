@@ -1,0 +1,74 @@
+/* Fonts are defined herein */
+
+@mixin font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin font-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@mixin font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+@mixin font-opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@mixin font-cormorant {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+@mixin font-ravi {
+    font-family: 'Ravi Prakash', cursive;
+}
+
+@mixin font-pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+@mixin use-raviprakesh {
+    @font-face {
+        font-family: 'Ravi Prakash';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Ravi Prakash'), local('RaviPrakash-Regular'), url(../fonts/ravi_prakash.ttf) format('truetype');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }
+}
+
+@mixin use-pacifico {
+    @font-face {
+        font-family: 'Pacifico';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Pacifico Regular'), local('Pacifico-Regular'), url(../fonts/pacifico.ttf) format('truetype');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }
+}
+
+@mixin use-opensans {
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Open Sans Light'), local('OpenSans-Light'), url(../fonts/open-sans-light.ttf) format('truetype');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Open Sans'), local('OpenSans'), url(../fonts/open-sans.ttf) format('truetype');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+    }
+}

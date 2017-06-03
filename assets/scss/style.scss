@@ -1,0 +1,78 @@
+@import "_partials/fonts";
+@import "_partials/mixins";
+@import "_partials/vars";
+
+@include full-page-hack;
+
+.error-404 {
+    height: 100%;
+    width: 100%;
+	@include font-opensans;
+	background: url(../resx/lozt.jpg) no-repeat top left fixed;
+	background-size: cover;
+
+	&::before{
+		content: "";
+		@include absolute-full;
+		background:  $theme-deepblue;
+		opacity: .8
+	}
+	
+	
+    h1 {
+        font-size:180px;
+        color: $theme-white;
+		margin-top: 0;
+		transition: .25s;
+		
+		@media (max-width: 480px) {
+	        font-size: 350%;
+		}
+    }
+    
+    .content {
+        text-align: center;
+		position: relative;
+		padding: 8rem 1rem 4rem;
+		box-sizing: border-box;
+		position: relative;
+		overflow-y: auto;
+		height: 100%;
+    }
+
+    h2 {
+        color: $theme-white;
+        font-weight: 100;
+    }
+
+	span {
+			font-size: 1.2em;
+			color: $theme-white;
+			font-weight: lighter;
+			padding-top: 5%;
+			position: relative;
+	}
+	
+	@include headers {
+		@include font-lato
+	}
+	
+	a {
+		color: $theme-white !important;
+	}
+	
+	.link-div {
+		margin-top: 3rem;
+		text-transform: uppercase;
+	}
+}
+
+.error-500 {
+	@extend .error-404;
+	background: url(../resx/mistake.jpg) no-repeat center left fixed ;
+	background-size: cover !important;
+	
+
+}
+
+

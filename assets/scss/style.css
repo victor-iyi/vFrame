@@ -1,0 +1,80 @@
+/* Fonts are defined herein */
+/**
+ * ensures that vertically aligned children don't appear blurry
+ */
+/**
+ * vertically aligns an element
+ */
+/*
+    Keyframes
+    Credits: https://gist.github.com/Integralist/3931680
+*/
+/*
+    Transform
+    Credits: https://codepen.io/sawmac/pen/qGudy/
+*/
+/*
+    Style placeholder
+    Credits: http://stackoverflow.com/questions/17181849/placeholder-mixin-scss-css
+*/
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
+
+.error-404, .error-500 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: url(../resx/lozt.jpg) no-repeat top left fixed;
+  background-size: cover; }
+  .error-404::before, .error-500::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #279AF1;
+    opacity: 0.8; }
+  .error-404 h1, .error-500 h1 {
+    font-size: 180px;
+    color: #F7F7FF;
+    margin-top: 0;
+    transition: .25s; }
+    @media (max-width: 480px) {
+      .error-404 h1, .error-500 h1 {
+        font-size: 350%; } }
+  .error-404 .content, .error-500 .content {
+    text-align: center;
+    position: relative;
+    padding: 8rem 1rem 4rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+    height: 100%; }
+  .error-404 h2, .error-500 h2 {
+    color: #F7F7FF;
+    font-weight: 100; }
+  .error-404 span, .error-500 span {
+    font-size: 1.2em;
+    color: #F7F7FF;
+    font-weight: lighter;
+    padding-top: 5%;
+    position: relative; }
+  .error-404 h1, .error-500 h1, .error-404 h2, .error-500 h2, .error-404 h3, .error-500 h3, .error-404 h4, .error-500 h4, .error-404 h5, .error-500 h5, .error-404 h6, .error-500 h6 {
+    font-family: 'Lato', sans-serif; }
+  .error-404 a, .error-500 a {
+    color: #F7F7FF !important; }
+  .error-404 .link-div, .error-500 .link-div {
+    margin-top: 3rem;
+    text-transform: uppercase; }
+
+.error-500 {
+  background: url(../resx/mistake.jpg) no-repeat center left fixed;
+  background-size: cover !important; }
+
+/*# sourceMappingURL=style.css.map */

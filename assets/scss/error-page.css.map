@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAmCA;;GAEG;AAOH;;GAEG;AA4LH;;;EAGE;AAmBF;;;EAGE;AASF;;;EAGE;AC7QF,aAAc;EACV,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;EACrB,WAAW,EAAE,qBAAqB",
+"sources": ["_partials/_quick_mixins.scss","error-page.scss"],
+"names": [],
+"file": "error-page.css"
+}
