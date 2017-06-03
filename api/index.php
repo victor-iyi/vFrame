@@ -8,7 +8,8 @@
  * Copyright victor © 2017. All rights reserved.
  */
 
-require_once __DIR__ . "/../app/init.php";
 use App\Core\Api;
+
+require_once __DIR__ . "/../app/init.php";
 
 $api = new Api;

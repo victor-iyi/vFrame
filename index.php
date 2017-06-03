@@ -8,3 +8,6 @@
  * Copyright victor © 2017. All rights reserved.
  */
 
+require_once 'app/init.php';
+
+$app = new App\Core\App;

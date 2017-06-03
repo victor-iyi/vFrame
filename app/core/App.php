@@ -14,7 +14,7 @@ use App\Controllers\_ErrorController;
 
 class App
 {
-  protected $controller = 'dashboard';
+  protected $controller = 'home';
   protected $method = 'index';
   protected $args = [];
 
