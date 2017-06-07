@@ -1,18 +1,18 @@
 <?php
+
 /**
- * @author
- * Created by victor.
- * A.I. engineer & Software developer
- * javafolabi@gmail.com
- * On 03 06, 2017 @ 3:53 PM
- * Copyright victor © 2017. All rights reserved.
+ * Created by PhpStorm.
+ * User: victor
+ * Date: 5/28/17
+ * Time: 7:56 PM
  */
 
 namespace App\Libs\Classes;
 
 
-class Session
+abstract class Session
 {
+
   /**
    * Starts a session.
    */
@@ -42,7 +42,17 @@ class Session
   }
 
   /**
-   * Destroys a $_SESSION
+   * Removes a session key from the $_SESSION
+   * @param $key
+   */
+  public static function remove($key)
+  {
+    if (isset($_SESSION[$key]))
+      unset($_SESSION[$key]);
+  }
+
+  /**
+   * Destroys all sessions
    */
   public static function destroy()
   {

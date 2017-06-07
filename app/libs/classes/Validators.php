@@ -1,11 +1,9 @@
 <?php
 /**
- * @author
- * Created by victor.
- * A.I. engineer & Software developer
- * javafolabi@gmail.com
- * On 03 06, 2017 @ 3:53 PM
- * Copyright victor © 2017. All rights reserved.
+ * Created by PhpStorm.
+ * User: victor
+ * Date: 5/31/17
+ * Time: 5:00 PM
  */
 
 namespace App\Libs\Classes;
@@ -19,17 +17,20 @@ class Validators
    * @param $email
    * @return bool
    */
-  public static function validateEmail($email) {
+  public static function validateEmail($email)
+  {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
   }
 
   /**
    * Password Validator ensures password is at least 4 characters long
    * @param $password
+   * @param int $length
    * @return bool
    */
-  public static function validatePassword($password) {
-    return strlen($password) > 3;
+  public static function validatePassword($password, $length = 3)
+  {
+    return strlen($password) > $length;
   }
 
 }
