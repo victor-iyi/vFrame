@@ -13,7 +13,7 @@ namespace App\Core;
 
 use App\Libs\Classes\Database;
 
-class Model
+abstract class Model
 {
 
   public $db;
