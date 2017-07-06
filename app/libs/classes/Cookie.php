@@ -1,9 +1,11 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: victor
- * Date: 6/1/17
- * Time: 8:05 PM
+ * @author
+ * Created by victor.
+ * A.I. engineer & Software developer
+ * javafolabi@gmail.com
+ * On 01 06, 2017 @ 8:05 PM
+ * Copyright victor © 2017. All rights reserved.
  */
 
 namespace App\Libs\Classes;

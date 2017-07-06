@@ -1,4 +1,12 @@
 <?php
+/**
+ * @author
+ * Created by victor.
+ * A.I. engineer & Software developer
+ * javafolabi@gmail.com
+ * On 01 06, 2017 @ 6:50 PM
+ * Copyright victor © 2017. All rights reserved.
+ */
 
 namespace App\Libs\Classes;
 
