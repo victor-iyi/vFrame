@@ -32,6 +32,7 @@
 - Open up your favorite web browser _(hopefully Google Chrome)_ :) and enter the url `localhost/vFrame/` (depending on your server set up, you might need to change that as appropriate).
 - Voila! Enjoy development.
 ----------
+
 ### About MVC Frameworks.
 **vFrame** is an MVC Framework, meaning the views are seprated from your models and they both go through the controller to pass information back and forth.
 MVC (or Model View Controller) is one of the design patterns created by _the Gang of four_.
@@ -76,16 +77,43 @@ class HomeController extends Controller
   }
 
   /**
-   * Renders custom error view for a specified error type
+   * Controller responsible for "/"
+	 * @endpoint localhost/vFrame/
    * @param null $type
    * @param string $status
    * @return mixed|void
    */
   public function index()
   {
-		// render the home view located @ vFrame/app/views/home/index.php
+		// renders the home view located @ vFrame/app/views/home/index.php
     $this->view->render('home/index'); 
   }
 
+	 /**
+   * Controller responsible for "/about"
+	 * @endpoint localhost/vFrame/about
+   * @param null $type
+   * @param string $status
+   * @return mixed|void
+   */
+  public function about()
+  {
+		// renders the about view located @ vFrame/app/views/home/about.php
+    $this->view->render('home/about'); 
+  }
+
+	 /**
+   * Controller responsible for "/contact"
+	 * @endpoint localhost/vFrame/contact
+   * @param null $type
+   * @param string $status
+   * @return mixed|void
+   */
+  public function contact()
+  {
+		// renders the contact view located @ vFrame/app/views/home/contact.php
+    $this->view->render('home/contact'); 
+  }
+	
 }
 ```
