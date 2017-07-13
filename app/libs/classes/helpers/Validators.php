@@ -6,7 +6,7 @@
  * Time: 5:00 PM
  */
 
-namespace App\Libs\Classes;
+namespace App\Libs\Classes\Helpers;
 
 
 class Validators

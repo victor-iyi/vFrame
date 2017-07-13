@@ -11,7 +11,8 @@
 namespace App\Core;
 
 
-use App\Libs\Classes\Database;
+
+use App\Libs\Classes\Helpers\Database;
 
 abstract class Model
 {

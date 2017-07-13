@@ -6,7 +6,7 @@
  * Time: 8:05 PM
  */
 
-namespace App\Libs\Classes;
+namespace App\Libs\Classes\Helpers;
 
 
 abstract class Cookie

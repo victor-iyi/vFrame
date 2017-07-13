@@ -7,7 +7,7 @@
  * Time: 7:56 PM
  */
 
-namespace App\Libs\Classes;
+namespace App\Libs\Classes\Helpers;
 
 
 abstract class Session

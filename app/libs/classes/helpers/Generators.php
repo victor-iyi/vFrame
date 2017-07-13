@@ -8,7 +8,7 @@
  * Copyright victor © 2017. All rights reserved.
  */
 
-namespace App\Libs\Classes;
+namespace App\Libs\Classes\Helpers;
 
 
 class Generators

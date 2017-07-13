@@ -9,7 +9,7 @@
  */
 
 /* Initialize Session here... */
-use App\Libs\Classes\Session;
+use App\Libs\Classes\Helpers\Session;
 
 /* All required file to get you going are required_once here... */
 require_once __DIR__ . '/../app/libs/config/paths.php';

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libs\Classes;
+namespace App\Libs\Classes\Helpers;
 
 use App\Controllers\_ErrorController;
 
