@@ -18,8 +18,9 @@ class User extends Classes
 
   /**
    * User constructor.
+   * @param null|array $data
    */
-  public function __construct()
+  public function __construct($data=null)
   {
     parent::__construct();
   }
