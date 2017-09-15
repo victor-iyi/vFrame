@@ -14,6 +14,7 @@ use App\Controllers\_ErrorController;
 
 class Database
 {
+
   # !- Functions are organized with the CRUD format
 
   private $conn;
