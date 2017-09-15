@@ -16,6 +16,7 @@ class Generators
 
   /**
    * Hash a password using PASSWORD_BCRYPT default algorithm
+   *
    * @param $password
    * @param int $algorithm
    * @return bool|string
@@ -28,6 +29,7 @@ class Generators
 
   /**
    * Verifies hashed password
+   *
    * @param $password
    * @param $hash
    * @return bool
@@ -39,6 +41,7 @@ class Generators
 
   /**
    * Generates random mixed case string
+   *
    * @param $length
    * @return string
    */
@@ -52,6 +55,7 @@ class Generators
 
   /**
    * Generates a random salt
+   *
    * @param $name
    * @param int $algorithm
    * @return bool|string
@@ -63,6 +67,7 @@ class Generators
 
   /**
    * Verifies a salt
+   *
    * @param $name
    * @param $salt
    * @return bool
@@ -70,6 +75,19 @@ class Generators
   function verifySalt($name, $salt)
   {
     return password_verify($name, $salt);
+  }
+
+  /**
+   * Generates md5 hash [Same random hash sequence]
+   *
+   * @credits Victor I. Afolabi
+   * @param $name
+   * @param bool $raw_output
+   * @return string
+   */
+  function generateMD5($name, $raw_output=True)
+  {
+    return md5($name, $raw_output);
   }
 
 }
