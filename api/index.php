@@ -10,6 +10,6 @@
 
 use App\Core\Api;
 
-require_once __DIR__ . "/../app/init.php";
+require_once __DIR__ . "/../App/init.php";
 
 $api = new Api;
