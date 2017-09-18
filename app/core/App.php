@@ -59,6 +59,8 @@ class App
 
   /**
    * Ensures that the method exists within a controller
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $url
    * @param $index
    * @return array
@@ -80,6 +82,8 @@ class App
 
   /**
    * Sanitizes and splits up the URL into an array
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @return array
    */
   private function __parseURL()
@@ -98,6 +102,8 @@ class App
 
   /**
    * Method was supplied to controller, but is in-existent
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @return array
    */
   private function __methodInExistent()
@@ -109,6 +115,8 @@ class App
 
   /**
    * Ensures that the resolved controller actually does exist
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    */
   private function __assertController()
   {
@@ -121,6 +129,8 @@ class App
 
   /**
    * Cleans up dashes(-) in the controller/method names
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $subject
    * @return mixed
    */

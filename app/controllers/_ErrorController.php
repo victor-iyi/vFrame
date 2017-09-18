@@ -27,6 +27,8 @@ class _ErrorController extends Controller
 
   /**
    * Renders custom error view for a specified error type
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param null $type
    * @param string $status
    * @return mixed|void

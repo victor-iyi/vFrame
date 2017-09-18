@@ -35,6 +35,8 @@ class View
   /**
    * Loads in a view file with the option of using a defined layout.
    * Note: properties of this current class is available in the loaded view file.
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $view
    * @param string $layout
    */

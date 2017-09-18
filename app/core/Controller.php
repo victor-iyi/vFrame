@@ -29,6 +29,8 @@ abstract class Controller
 
   /**
    * Performs operation based on supplied arguments
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    */
   protected function _ops()
   {
@@ -38,6 +40,8 @@ abstract class Controller
 
   /**
    * Default method run by every controller.
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @return mixed
    */
   abstract public function index();

@@ -18,6 +18,9 @@ class Api
 
   private $version;
 
+  /**
+   * Api constructor.
+   */
   public function __construct()
   {
     $url = $this->__parseURL();
@@ -40,6 +43,8 @@ class Api
 
   /**
    * Sanitizes and splits up the URL into an array
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @return array
    */
   private function __parseURL()
