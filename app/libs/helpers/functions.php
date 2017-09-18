@@ -11,6 +11,8 @@
 
 /**
  * Preserves the text supplied in HTML inputs
+ *
+ * @credits Victor I. Afolabi <javafolabi@gmail.com>
  * @param $key
  * @return string
  */
@@ -21,6 +23,8 @@ function _preserveInputs($key)
 
 /**
  * Preserve the state of a checkbox
+ *
+ * @credits Victor I. Afolabi <javafolabi@gmail.com>
  * @param $key
  * @return string
  */
@@ -31,6 +35,8 @@ function _preserveCheckBox($key)
 
 /**
  * Redirects to supplied uri
+ *
+ * @credits Victor I. Afolabi <javafolabi@gmail.com>
  * @param $uri
  */
 function _redirect($uri)
@@ -42,6 +48,8 @@ function _redirect($uri)
 
 /**
  * Hash a password using PASSWORD_BCRYPT default algorithm
+ *
+ * @credits Victor I. Afolabi <javafolabi@gmail.com>
  * @param $password
  * @param int $algorithm
  * @return bool|string
@@ -54,6 +62,8 @@ function _hash($password, $algorithm = PASSWORD_BCRYPT)
 
 /**
  * Verifies hashed password
+ *
+ * @credits Victor I. Afolabi <javafolabi@gmail.com>
  * @param $password
  * @param $hash
  * @return bool
@@ -65,6 +75,8 @@ function _verify_hash($password, $hash)
 
 /**
  * Generates random mixed case string
+ *
+ * @credits Victor I. Afolabi <javafolabi@gmail.com>
  * @param $length
  * @return string
  */
@@ -78,6 +90,8 @@ function _generate_id($length = 8)
 
 /**
  * Generates a random salt
+ *
+ * @credits Victor I. Afolabi <javafolabi@gmail.com>
  * @param $name
  * @param int $algorithm
  * @return bool|string
@@ -89,6 +103,8 @@ function _generate_salt($name, $algorithm = PASSWORD_BCRYPT)
 
 /**
  * Verifies a salt
+ *
+ * @credits Victor I. Afolabi <javafolabi@gmail.com>
  * @param $name
  * @param $salt
  * @return bool

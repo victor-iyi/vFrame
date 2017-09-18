@@ -14,9 +14,11 @@ namespace App\Libs\Classes;
 class Generators
 {
 
+
   /**
    * Hash a password using PASSWORD_BCRYPT default algorithm
    *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $password
    * @param int $algorithm
    * @return bool|string
@@ -30,6 +32,7 @@ class Generators
   /**
    * Verifies hashed password
    *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $password
    * @param $hash
    * @return bool
@@ -42,7 +45,8 @@ class Generators
   /**
    * Generates random mixed case string
    *
-   * @param $length
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
+   * @param int $length
    * @return string
    */
   function generateId($length = 8)
@@ -56,6 +60,7 @@ class Generators
   /**
    * Generates a random salt
    *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $name
    * @param int $algorithm
    * @return bool|string
@@ -68,6 +73,7 @@ class Generators
   /**
    * Verifies a salt
    *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $name
    * @param $salt
    * @return bool
@@ -80,7 +86,7 @@ class Generators
   /**
    * Generates md5 hash [Same random hash sequence]
    *
-   * @credits Victor I. Afolabi
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $name
    * @param bool $raw_output
    * @return string

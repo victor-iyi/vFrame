@@ -16,6 +16,8 @@ abstract class APIAble
 
   /**
    * Tells if supplied method name exists
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $method_name
    * @return bool
    */

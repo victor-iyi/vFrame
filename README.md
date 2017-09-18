@@ -77,11 +77,10 @@ class HomeController extends Controller
   }
 
   /**
-   * Controller responsible for "/"
+   * Controller responsible for "/" or home page
+   * 
+   * @credits Victor I. Afolabi <javafolabi@gmail.com> 
 	 * @endpoint localhost/vFrame/
-   * @param null $type
-   * @param string $status
-   * @return mixed|void
    */
   public function index()
   {
@@ -91,10 +90,9 @@ class HomeController extends Controller
 
 	 /**
    * Controller responsible for "/about"
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
 	 * @endpoint localhost/vFrame/about
-   * @param null $type
-   * @param string $status
-   * @return mixed|void
    */
   public function about()
   {
@@ -104,10 +102,9 @@ class HomeController extends Controller
 
 	 /**
    * Controller responsible for "/contact"
+   * 
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
 	 * @endpoint localhost/vFrame/contact
-   * @param null $type
-   * @param string $status
-   * @return mixed|void
    */
   public function contact()
   {

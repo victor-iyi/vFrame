@@ -16,8 +16,10 @@ class Validators
 
   /**
    * Checks for a valid email (e.g example@email.com)
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $email
-   * @return bool
+   * @return mixed
    */
   public static function validateEmail($email)
   {
@@ -26,6 +28,8 @@ class Validators
 
   /**
    * Password Validator ensures password is at least 4 characters long
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $password
    * @param int $length
    * @return bool

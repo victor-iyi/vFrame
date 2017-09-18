@@ -11,22 +11,23 @@
 namespace App\Libs\Classes;
 
 
-class Mail
+abstract class Mail
 {
 
   /**
    * Sends an email
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $to -> who you are sending the e-mail to
    * @param $title -> title of the mail
    * @param $message -> actual message you want to send
    * @param null $headers
    * @return bool
    */
-  public function send($to, $title, $message, $headers=null)
+  public static function send($to, $title, $message, $headers=null)
   {
     $headers = $headers ? $headers : "From: {$to}";
-    if ( !Validators::validateEmail($to) ) return false;
-    return mail($to, $title, $message, $headers);
+    return ( !Validators::validateEmail($to) )  ? false : mail($to, $title, $message, $headers);
   }
 
 }

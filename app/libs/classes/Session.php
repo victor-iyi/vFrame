@@ -16,7 +16,9 @@ abstract class Session
 {
 
   /**
-   * Starts a session.
+   * Starts a session
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    */
   public static function init()
   {
@@ -24,7 +26,9 @@ abstract class Session
   }
 
   /**
-   * Sets a $_SESSION given a key
+   * Sets a session given a key
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $key
    * @param $value
    */
@@ -34,7 +38,9 @@ abstract class Session
   }
 
   /**
-   * Retrieve a $_SESSION
+   * Retrieve a session by key
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $key
    * @return bool
    */
@@ -44,7 +50,9 @@ abstract class Session
   }
 
   /**
-   * Removes a session key from the $_SESSION
+   * Removes a session key from $_SESSION
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $key
    */
   public static function remove($key)
@@ -54,7 +62,9 @@ abstract class Session
   }
 
   /**
-   * Destroys all sessions
+   * Destroy all sessions
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    */
   public static function destroy()
   {

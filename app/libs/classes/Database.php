@@ -40,6 +40,8 @@ class Database
 
   /**
    * Executes an SQL statement using PDO::prepare
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $query
    * @param array|bool $bindings
    * @return bool|\PDOStatement
@@ -59,6 +61,8 @@ class Database
 
   /**
    * Inserts data into the database.
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param string $table
    * @param array $bindings
    * @return bool|int
@@ -74,6 +78,7 @@ class Database
   /**
    * Returns columns matching specified criteria
    *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $table
    * @param $field
    * @param $value
@@ -87,6 +92,8 @@ class Database
 
   /**
    * Selects records
+   *
+   * @credits Victor I. Afolabi <javavafolabi@gmail.com>
    * @param $table
    * @param null $limit
    * @return array
@@ -101,7 +108,7 @@ class Database
   /**
    * Returns all fields where primary key matches foreign key
    *
-   * @credits Victor I. Afolabi
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $table1 string The first table
    * @param $table2 string The second table
    * @param $pk string The primary key field
@@ -116,7 +123,7 @@ class Database
   /**
    * Inner join with WHERE clause
    *
-   * @credits Victor I. Afolabi
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $table1 string The first table
    * @param $table2 string The second table
    * @param $pk string the primary key
@@ -133,6 +140,7 @@ class Database
 
   /**
    * Determines if specified entry exists
+   *
    * @credit Banjo Mofesola Paul
    * @param  string $value The value to search for
    * @param  string $column The column to search under
@@ -164,18 +172,19 @@ class Database
 
   /**
    * Updates a row in a table
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $table
    * @param $bindings
    * @param $field
    * @param $record
    * @return bool|\PDOStatement
-   * @internal param $id
    */
   public function update($table, $bindings, $field, $record)
   {
     $structure = "";
     foreach ($bindings as $key => $value)
-      $structure .= $key . "=:" . $key . ", ";
+      $structure .= $key . " = :" . $key . ", ";
     $structure = rtrim($structure, ", ");
     $bindings[$field] = $record;
     $result = $this->query("UPDATE " . $table . " SET {$structure} WHERE {$field} = :{$field}", $bindings);
@@ -184,6 +193,8 @@ class Database
 
   /**
    * Deletes all entry in a table
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $table
    * @return bool|\PDOStatement
    */
@@ -194,6 +205,8 @@ class Database
 
   /**
    * Deletes a row from a table
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $table
    * @param $id
    * @return bool|\PDOStatement
@@ -205,6 +218,8 @@ class Database
 
   /**
    * Runs an SQL command to DROP a table
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $table
    * @return bool|\PDOStatement
    */
@@ -215,6 +230,8 @@ class Database
 
   /**
    * Returns Database connection Message
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @return string
    */
   public function getStatusMessage()

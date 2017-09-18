@@ -22,12 +22,15 @@ abstract class API
   protected $entity;
   protected $endpoint;
 
+  #!- Your API classes goes here...
   protected $class_tree = [
     'user' => User::class
   ];
 
   /**
    * API constructor.
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $request
    * @throws \Exception
    */
@@ -85,6 +88,8 @@ abstract class API
 
   /**
    * Performs the API operation
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @return string
    */
   public function execute()
@@ -99,6 +104,8 @@ abstract class API
 
   /**
    * Tests if an exception must be thrown, based on args length
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    */
   private function _dieTest()
   {
@@ -107,6 +114,8 @@ abstract class API
 
   /**
    * Recursively cleans an array input
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $data
    * @return array|string
    */
@@ -125,6 +134,8 @@ abstract class API
 
   /**
    * Error disambiguation
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $code
    * @return mixed
    */
@@ -141,6 +152,8 @@ abstract class API
 
   /**
    * Process data, and output appropriate header
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $data
    * @param int $status
    * @return string
@@ -152,6 +165,9 @@ abstract class API
   }
 
   /**
+   * Gets an instance of a class
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $className
    * @return APIAble
    * @throws \Exception

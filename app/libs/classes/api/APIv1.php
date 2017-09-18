@@ -16,6 +16,8 @@ class APIv1 extends API
 
   /**
    * APIv1 constructor.
+   *
+   * @credits Victor I. Afolabi <javafolabi@gmail.com>
    * @param $request
    */
   public function __construct($request)
