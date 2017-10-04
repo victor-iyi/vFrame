@@ -1,10 +1,16 @@
 # vFrame
-### PHP MVC Framework.
 
 [vFrame](https://github.com/victor-iyiola/vFrame#readme) is a PHP MVC Framework built to make your life as a developer a lot fun and stress free.
-**vFrame** also provides a RESTful API that allows you to easily write your API in an efficient and stressful way. Trust me! This is one of the coolest RESTful API I've ever worked with! :)
-**vFrame** is suitable for small and medium sized enterprise applications.
-----------
+*vFrame* also provides a RESTful API that allows you to easily write your API in an efficient and stressful way. Trust me! This is one of the coolest RESTful API I've ever worked with! :)
+*vFrame* is suitable for small and medium sized enterprise applications.
+
+## Table of Contents
+* [What vFrame provides](#what-vframe-provides)
+* [Getting Started](#getting-started)
+* [About MVC Frameworks](#about-mvc-frameworks)
+* [Creating Controllers](#creating-controllers)
+* [Example](#example)
+* [Collaborate](#collaborate)
 
 ### What vFrame provides.
 1. A RESTful API.
@@ -21,8 +27,9 @@
 12. Awesome programming experience.
 13. Easy bug trace.
 14. Namespacing for code organisation.
-15. Lightweight development
-----------
+15. Lightweight development.
+
+_among many others..._
 
 ### Getting Started.
 - Clone this repository `git clone https://github.com/victor-iyiola/vFrame.git` or download zip into your web server directory (e.g. _htdocs_).
@@ -31,12 +38,12 @@
 - Change the `project_path` as appropriate and the database configurations.
 - Open up your favorite web browser _(hopefully Google Chrome)_ :) and enter the url `localhost/vFrame/` (depending on your server set up, you might need to change that as appropriate).
 - Voila! Enjoy development.
-----------
+
 
 ### About MVC Frameworks.
-**vFrame** is an MVC Framework, meaning the views are seprated from your models and they both go through the controller to pass information back and forth.
+*vFrame* is an MVC Framework, meaning the views are seprated from your models and they both go through the controller to pass information back and forth.
 MVC (or Model View Controller) is one of the design patterns created by _the Gang of four_.
-----------
+
 
 ### Creating Controllers.
 - Create a new PHP Class in `vFrame/app/controllers`.
@@ -117,3 +124,6 @@ class HomeController extends Controller
 	
 }
 ```
+
+### Collaborate
+Do not hesitate to send a pull request, I am open to all suggestions and collaborations. You can also shoot me a mail by clicking <a href="mailto:javafolabi@gmail.com">here</a>
