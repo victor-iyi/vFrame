@@ -97,3 +97,16 @@ function _verify_salt($name, $salt)
 {
   return password_verify($name, $salt);
 }
+
+
+/**
+ * Cleans up dashes(-) in the controller/method names
+ * @param $subject
+ * @return mixed
+ */
+function _cleanUpDashes($subject)
+{
+    $tokens = preg_split('/\-/', $subject, -1, PREG_SPLIT_NO_EMPTY);
+    foreach ($tokens as $k=>$v) $tokens[$k] = ucfirst($v);
+    return implode("", $tokens);
+}
