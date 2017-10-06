@@ -121,6 +121,7 @@ class HomeController extends Controller
 	
 }
 ```
+For more examples you can check the example branch. 
 
 ### Collaborate
 Do not hesitate to send a pull request, I am open to all suggestions and collaborations. You can also shoot me a mail by clicking <a href="mailto:javafolabi@gmail.com">here</a>
