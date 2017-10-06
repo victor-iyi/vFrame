@@ -7,21 +7,21 @@
 ----------
 
 ### What vFrame provides.
-1. A RESTful API.
-2. Code re-use.
-3. Modularity.
-4. Layouts to allow for easy and dynamic web interface.
-5. Database abstraction.
-6. Lots of helpful classes and methods.
-7. Constants to various paths in your project.
-8. Great error handler.
-9. Class autoloader.
-10. Right-out-of-the-box assets and resources.
-11. `.htaccess` to prevent unauthorized access to private files.
-12. Awesome programming experience.
-13. Easy bug trace.
-14. Namespacing for code organisation.
-15. Lightweight development
+* A RESTful API.
+* Code re-use.
+* Modularity.
+* Layouts to allow for easy and dynamic web interface.
+* Database abstraction.
+* Lots of helpful classes and methods.
+* Constants to various paths in your project.
+* Great error handler.
+* Class autoloader.
+* Right-out-of-the-box assets and resources.
+* `.htaccess` to prevent unauthorized access to private files.
+* Awesome programming experience.
+* Easy bug trace.
+* Namespacing for code organisation.
+* Lightweight development
 ----------
 
 ### Getting Started.
