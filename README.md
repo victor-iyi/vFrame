@@ -4,29 +4,51 @@
 *vFrame* also provides a RESTful API that allows you to easily write your API in an efficient and stressful way. Trust me! This is one of the coolest RESTful API I've ever worked with! :)
 *vFrame* is suitable for small and medium sized enterprise applications.
 
+
 ## Table of Contents
+
 * [What vFrame provides](#what-vframe-provides)
+
 * [Getting Started](#getting-started)
+
 * [About MVC Frameworks](#about-mvc-frameworks)
+
 * [Creating Controllers](#creating-controllers)
+
 * [Example](#example)
+
 * [Collaborate](#collaborate)
 
 ### What vFrame provides.
+
 * A RESTful API.
+
 * Code re-use.
+
 * Modularity.
+
 * Layouts to allow for easy and dynamic web interface.
+
 * Database abstraction.
+
 * Lots of helpful classes and methods.
+
 * Constants to various paths in your project.
+
 * Great error handler.
+
 * Class autoloader.
+
 * Right-out-of-the-box assets and resources.
+
 * `.htaccess` to prevent unauthorized access to private files.
+
 * Awesome programming experience.
+
 * Easy bug trace.
+
 * Namespacing for code organisation.
+
 * Lightweight development.
 
 _among many others..._
