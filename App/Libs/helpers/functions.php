@@ -117,6 +117,8 @@ function _verify_salt($name, $salt)
 
 /**
  * Cleans up dashes(-) in the controller/method names
+ *
+ * @author Victor I. Afolabi <javafolabi@gmail.com>
  * @param $subject
  * @return mixed
  */
@@ -125,4 +127,18 @@ function _cleanUpDashes($subject)
     $tokens = preg_split('/\-/', $subject, -1, PREG_SPLIT_NO_EMPTY);
     foreach ($tokens as $k=>$v) $tokens[$k] = ucfirst($v);
     return implode("", $tokens);
+}
+
+/**
+ * Joins file paths together
+ * e.g _join_paths('htdocs', 'vFrame', 'index.php');
+ * resolves to 'htdocs/vFrame/index.php' on unix systems.
+ * and 'htdocs\\vFrame\\index.php' on win32
+ *
+ * @author Victor I. Afolabi <javafolabi@gmail.com>
+ * @return string
+ */
+function _join_paths() {
+  $paths = array_filter(func_get_args());
+  return preg_replace('#/{2,}#', DIRECTORY_SEPARATOR, implode(DIRECTORY_SEPARATOR, $paths));
 }
