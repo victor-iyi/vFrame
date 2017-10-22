@@ -19,7 +19,7 @@
 
 * [Collaborate](#collaborate)
 
-### What vFrame provides.
+### What vFrame provides
 
 * A RESTful API.
 
@@ -53,30 +53,36 @@
 
 _among many others..._
 
-### Getting Started.
-- Clone this repository `git clone https://github.com/victor-iyiola/vFrame.git` or download zip into your web server directory (e.g. _htdocs_).
-- Change directory into your project folder `cd path/to/project`.
-- Open up the `config.ini` file located at `vFrame/app/libs/config.ini`.
-- Change the `project_path` as appropriate and the database configurations.
-- Open up your favorite web browser _(hopefully Google Chrome)_ :) and enter the url `localhost/vFrame/` (depending on your server set up, you might need to change that as appropriate).
-- Voila! Enjoy development.
+### Getting Started
+
+* Clone this repository `git clone https://github.com/victor-iyiola/vFrame.git` or download zip into your web server directory (e.g. _htdocs_).
+* Change directory into your project folder `cd path/to/project`.
+* Open up the `config.ini` file located at `vFrame/app/libs/config.ini`.
+* Change the `project_path` as appropriate and the database configurations.
+* Open up your favorite web browser _(hopefully Google Chrome)_ :) and enter the url `localhost/vFrame/` (depending on your server set up, you might need to change that as appropriate).
+* Voila! Enjoy development.
 
 
-### About MVC Frameworks.
+### About MVC Frameworks
+
 *vFrame* is an MVC Framework, meaning the views are seprated from your models and they both go through the controller to pass information back and forth.
 MVC (or Model View Controller) is one of the design patterns created by _the Gang of four_.
 
 
-### Creating Controllers.
-- Create a new PHP Class in `vFrame/app/controllers`.
-- Naming convention is really important here.
-- It is important your start with UpperCase and every other word starts with an uppercase. All of your controllers must end with the word `Controller` e.g `HomeController`, `AboutController`, `FrequentlyAskedQuestionController`.
-- All controllers must extend the super class `Controller` located @ `vFrame/app/core/Controller.php`.
-- After extending the `App\Libs\Controller`, you must override the abstract method `index()`.
+### Creating Controllers
+
+* Create a new PHP Class in `vFrame/app/controllers`.
+* Naming convention is really important here.
+* It is important your start with UpperCase and every other word starts with an uppercase. All of your controllers must end with the word `Controller` e.g `HomeController`, `AboutController`, `FrequentlyAskedQuestionController`.
+* All controllers must extend the super class `Controller` located @ `vFrame/app/core/Controller.php`.
+* After extending the `App\Libs\Controller`, you must override the abstract method `index()`.
+
 ----------
 
 #### Example
+
 Create a new PHP Class and name it `HomeController.php`
+
 ```PHP
 <?php
 
@@ -137,13 +143,15 @@ class HomeController extends Controller
    */
   public function contact()
   {
-		// renders the contact view located @ vFrame/app/views/home/contact.php
+    // renders the contact view located @ vFrame/app/views/home/contact.php
     $this->view->render('home/contact'); 
   }
-	
+  
 }
 ```
+
 For more examples you can check the example branch. 
 
 ### Collaborate
-Do not hesitate to send a pull request, I am open to all suggestions and collaborations. You can also shoot me a mail by clicking <a href="mailto:javafolabi@gmail.com">here</a>
+
+Do not hesitate to send a pull request, I am open to all suggestions and collaborations. You can also shoot me a mail by clicking [here](mailto:javafolabi@gmail.com)
